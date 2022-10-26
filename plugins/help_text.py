@@ -60,15 +60,15 @@ async def help_user(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('📝 ʀᴇɴᴀᴍᴇ', callback_data = "rnme"),
-                    InlineKeyboardButton('📂 ғɪʟᴇ ᴛᴏ ᴠɪᴅᴇᴏ', callback_data = "f2v")
+                    InlineKeyboardButton('📝 𝗥𝗘𝗡𝗔𝗠𝗘', callback_data = "rnme"),
+                    InlineKeyboardButton('', callback_data = "f2v")
                 ],
                 [
-                    InlineKeyboardButton('🎞️ ᴄᴜsᴛᴏᴍ ᴛʜᴜᴍʙɴᴀɪʟ', callback_data = "cthumb"),
-                    InlineKeyboardButton('📑 ᴄᴜsᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ ', callback_data = "ccaption")
+                    InlineKeyboardButton('🎞️ 𝗧𝗛𝗨𝗠𝗕𝗡𝗔𝗜𝗟', callback_data = "cthumb"),
+                    InlineKeyboardButton('📑 𝗖𝗔𝗣𝗧𝗜𝗢𝗠', callback_data = "ccaption")
                 ],
                 [
-                    InlineKeyboardButton('😉 ᴀʙᴏᴜᴛ ', callback_data = "about")
+                    InlineKeyboardButton('', callback_data = "about")
                 ]
             ]
         )
@@ -84,13 +84,13 @@ async def start_me(bot, update):
         try:
             user = await bot.get_chat_member(update_channel, update.chat.id)
             if user.status == "kicked":
-               await update.reply_text(" Sorry,You've Been Flooding Me So My Owner Removed You From Using Me If You Think It's An Error Contact : @Faris_TG")
+               await update.reply_text("OkDa")
                return
         except UserNotParticipant:
             await update.reply_text(
-                text="**Due To The Huge Traffic Only Channel Members Can Use This Bot Means You Need To Join The Below Mentioned Channel Before Using Me! **",
+                text="**Join Our Updates Channel To Use This Bot.**",
                 reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text="ᴊᴏɪɴ ᴍʏ ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{update_channel}")]
+                    [ InlineKeyboardButton(text="📢 Join Channel", url=f"https://t.me/{update_channel}")]
               ])
             )
             return
@@ -99,15 +99,15 @@ async def start_me(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                        InlineKeyboardButton("Help", callback_data = "ghelp")
+                        InlineKeyboardButton("", callback_data = "ghelp")
                 ],
                 [
-                    InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/dk_botx'),
-                    InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/dkbotxchats')
+                    InlineKeyboardButton('ʜᴇʟᴘ', callback_data='ghelp'),
+                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
                 ],
-                [
-                    InlineKeyboardButton('ᴅᴇᴠᴏʟᴏᴘᴇʀ', url='https://t.me/vloggerdeven_TG'),
-                    InlineKeyboardButton('sᴏᴜʀᴄᴇ', url='https://github.com/DKBOTx/FileRenamerBot')
+            
+                    InlineKeyboardButton('ᴅᴇᴠᴏʟᴏᴘᴇʀ', url='https://t.me/ddrabit/19'),
+                    InlineKeyboardButton('', url='https://github.com/DKBOTx/FileRenamerBot')
                 ]
             ]
         ),
@@ -189,15 +189,15 @@ async def cb_handler(client: Mai_bOTs , query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('📝 ʀᴇɴᴀᴍᴇ', callback_data = "rnme"),
-                    InlineKeyboardButton('📂 ғɪʟᴇ ᴛᴏ ᴠɪᴅᴇᴏ', callback_data = "f2v")
+                    InlineKeyboardButton('📝 𝗥𝗘𝗡𝗔𝗠𝗘', callback_data = "rnme"),
+                    InlineKeyboardButton('', callback_data = "f2v")
                 ],
                 [
-                    InlineKeyboardButton('🎞️ ᴄᴜsᴛᴏᴍ ᴛʜᴜᴍʙɴᴀɪʟ', callback_data = "cthumb"),
-                    InlineKeyboardButton('📑 ᴄᴜsᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ', callback_data = "ccaption")
+                    InlineKeyboardButton('🎞️ 𝗧𝗛𝗨𝗠𝗕𝗡𝗔𝗜𝗟', callback_data = "cthumb"),
+                    InlineKeyboardButton('📑 𝗖𝗔𝗣𝗧𝗜𝗢𝗡', callback_data = "ccaption")
                 ],
                 [
-                    InlineKeyboardButton(' 🫣 ᴀʙᴏᴜᴛ', callback_data = "about")
+                    InlineKeyboardButton('', callback_data = "about")
                 ]
             ]
         )
